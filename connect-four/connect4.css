@@ -1,0 +1,78 @@
+body {
+  background-color: rgb(238, 146, 60);
+  text-align: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: fantasy, monospace;
+  font-size: 45px;
+}
+
+.btn-primary {
+  color: rgb(182, 109, 32);
+  background-color: black;
+  border-color:rgb(182, 109, 32);
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: #666;
+}
+
+.btn {
+  font-family: fantasy, monospace;
+  font-size: 30px;
+  transition: ease-in-out;
+}
+
+#start {
+  position: flex;
+  margin: 2%;
+  align-items: center;
+}
+
+#start.playing {
+  margin-top: -55%;
+  transition: margin-top 1s;
+}
+/* game board table */ 
+
+#board td {
+  width: 60px;
+  height: 60px;
+  border: solid 1px #666;
+  align-items: center;
+}
+
+#game {
+  display: block;
+  margin: 45% 5% 0 30%;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.piece.p1 {
+  background-color: white;
+}
+
+.piece.p2 {
+  background-color: black;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
